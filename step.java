@@ -1,15 +1,53 @@
 public class step {
     public static void main(String args[]) {
-        for(int i = 1 ; i <= 5; i++ ) {
-            if(i == 1)
-                System.out.println(" *****   *****   *****   ***** ");
-            if(i == 2)
-                System.out.println("*     * *     *  *   *   *      "); 
-            if(i == 3)
-                System.out.println("*     * *     *  * * *   * * *");
-            if(i == 4)
-                System.out.println("*     * *     *  *           * ");
-            if(i == 5)
-                System.out.println(" *****   *****   *       ***** ");   
-        }     
-    }};
+
+        String[] lines = {
+
+                String.join(" ",
+                        " ***** ",
+                        " ***** ",
+                        " ***** ",
+                        " ***** "),
+
+                String.join(" ",
+                        " *   * ",
+                        " *   * ",
+                        " *   * ",
+                        " *     "),
+
+                String.join(" ",
+                        " *   * ",
+                        " *   * ",
+                        " ***** ",
+                        " ***** "),
+
+                String.join(" ",
+                        " *   * ",
+                        " *   * ",
+                        " *     ",
+                        "     * "),
+
+                String.join(" ",
+                        " *   * ",
+                        " *   * ",
+                        " *     ",
+                        "     * "),
+
+                String.join(" ",
+                        " *   * ",
+                        " *   * ",
+                        " *     ",
+                        " *   * "),
+
+                String.join(" ",
+                        " ***** ",
+                        " ***** ",
+                        " *     ",
+                        " ***** ")
+        };
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
+    }
+}
